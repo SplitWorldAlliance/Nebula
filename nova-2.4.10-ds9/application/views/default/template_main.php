@@ -181,9 +181,16 @@ $button_login = array(
 		
 		<div class="wrapper">
 			<div id="body">
-				<div class="nav-sub">
+					<div class="nav-sub"><ul>
+					<li class="menu_category">Mission Status</li>
+        				<?php echo text_output($this->msgs->get_message('mission-status'));?>
+					<li class="spacer"></li>
+  					<li class="menu_category">Navigation Panel</li>
 					<?php echo $nav_sub;?>
-				</div>
+					<li class="spacer"></li>
+					<li class="menu_category">Starship Status</li>
+					<?php echo text_output($this->msgs->get_message('ship-status'));?>
+					</ul></div>
 			
 				<div class="content">
 					<?php echo $flash_message;?>

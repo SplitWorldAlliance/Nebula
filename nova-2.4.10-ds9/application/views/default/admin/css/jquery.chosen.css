@@ -1,3 +1,4 @@
+div.chzn-container { color: #000; }
 div.chzn-container input {
 	background: #fff;
 	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));

@@ -12,7 +12,8 @@
 .UITheme .ui-widget input, .UITheme .ui-widget select, .UITheme .ui-widget textarea, .UITheme .ui-widget button { font-family: Lucida Grande,Verdana,Arial,sans-serif; font-size: 1em; }
 .UITheme .ui-widget-content { border: 1px solid #aaaaaa; background: #fcfcfc url(../images/ui-bg_flat_75_fcfcfc_40x100.png) 50% 50% repeat-x; color: #444444; }
 .UITheme .ui-widget-content a { color: #444444; }
-.UITheme .ui-widget-header { border: 1px solid #4a6440; background: #76896e url(../images/ui-bg_gloss-wave_40_76896e_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.UITheme .ui-widget-header { background: #b770cf url('../images/gradient-menu.png') 
+      repeat-x 0 0; filter: alpha(opacity=90); opacity: .9; border: 1px solid #b770cf; color: #000; font-weight: bold; }
 .UITheme .ui-widget-header a { color: #ffffff; }
 
 /* Interaction states
@@ -27,7 +28,7 @@
 
 /* Interaction Cues
 ----------------------------------*/
-.UITheme .ui-state-highlight, .UITheme .ui-widget-content .ui-state-highlight {border: 1px solid #fcefa1; background: #fdf5ce url(../images/ui-bg_highlight-soft_50_fdf5ce_1x100.png) 50% top repeat-x; color: #363636; }
+.UITheme .ui-state-highlight, .UITheme .ui-widget-content .ui-state-highlight {border: 1px solid #696969; background: #696969 url(../images/gradient-menu.png) 50% top repeat-x; color: #363636; }
 .UITheme .ui-state-highlight a, .UITheme .ui-widget-content .ui-state-highlight a { color: #363636; }
 .UITheme .ui-state-error, .UITheme .ui-widget-content .ui-state-error {border: 1px solid #cd0a0a; background: #f7cbba url(../images/ui-bg_highlight-soft_50_f7cbba_1x100.png) 50% top repeat-x; color: #cd0a0a; }
 .UITheme .ui-state-error a, .UITheme .ui-widget-content .ui-state-error a { color: #cd0a0a; }

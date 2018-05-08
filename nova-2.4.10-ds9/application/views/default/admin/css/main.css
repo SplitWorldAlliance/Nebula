@@ -9,5 +9,7 @@
 */
 
 @import url('structure.css');
+@import url('admin.css');
 @import url('skin.css');
 @import url('jquery.ui.tabs.css');
+@import url('../../_global/colors.css');

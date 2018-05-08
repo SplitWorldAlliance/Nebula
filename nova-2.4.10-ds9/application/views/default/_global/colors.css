@@ -1,0 +1,197 @@
+/*
+|---------------------------------------------------------------
+| Color Palette
+|---------------------------------------------------------------
+#696969
+rgb(105,105,105)
+
+#BABABA
+rgb(186,186,186)
+*/
+
+/*
+|---------------------------------------------------------------
+| main
+|---------------------------------------------------------------
+*/
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body 			{ color: #ccc; }
+
+.page-head 		{ color: #BABABA; }
+.page-subhead	{ color: #C4C3C4; }
+
+.gray			{ color: #999999; }
+.red			{ color: #cc334c; }
+.orange			{ color: #696969; }
+.green			{ color: #33cc66; }
+.blue			{ color: #334ccc; }
+.MD			{ color: #00cc00; }
+.black		{ color: #000; }
+
+a 			{ color: #BABABA; }
+a:hover 		{ color: #696969;}
+a.edit 		{ color: #bbb; }
+a.edit:hover	{ color: #BABABA; }
+
+.nav-sub ul li.menu_category { color: #ccc; }
+footer { color: #fff; }
+
+/*
+|---------------------------------------------------------------
+| borders
+|---------------------------------------------------------------
+*/
+#body,
+#comments p,
+#news_blocks p,
+.post_info,
+table.acp {
+	border: 1px solid #BABABA;
+}
+.content,
+.panel {
+	border-left: 1px solid #BABABA;
+	border-bottom: 1px solid #BABABA;
+}
+#acp-panel {
+	border: 1px solid #BABABA;
+	border-bottom: none;
+}
+#panelmenu li a span {
+	color: #fff;
+	border-right: 1px solid #BABABA;
+}
+#online {
+	border: 1px solid #BABABA;
+	border-top: none;
+}
+#panelmenu li a.active:hover span {
+	color: #fff;
+	border-right: 1px solid #BABABA;
+}
+
+/*
+|---------------------------------------------------------------
+| Tabs - Primary
+|---------------------------------------------------------------
+*/
+#menu .nav-main ul li a,
+.ui-tabs .ui-tabs-nav li a,
+.subtabs .ui-tabs-nav li a,
+#panelmenu li a:hover span,
+#panelmenu li a.active span,
+.UITheme .ui-widget-header {
+	color: #000;
+	background: rgba(186,186,186,.75) url('gradient-menu.png') repeat-x 0 0;
+}
+.subtabs .ui-tabs-nav li a,
+.UITheme .ui-widget-header {
+	border: 1px solid #696969;
+}
+.ui-tabs .ui-tabs-panel {
+	border-top: 2px solid #696969;
+}
+.subtabs .ui-tabs-panel {
+	border: none;
+}
+.subtabs .ui-tabs-nav li:first-child a,
+.subtabs .ui-tabs-nav li:first-child.ui-tabs-selected a {
+	border-left: 1px solid #696969;
+}
+
+/*
+|---------------------------------------------------------------
+| Tabs - Secondary
+|---------------------------------------------------------------
+*/
+#menu .nav-main ul li a:hover,
+#menu .nav-main ul li a:active,
+.ui-tabs .ui-tabs-nav li a:hover,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.subtabs .ui-tabs-nav li a:hover,
+.subtabs .ui-tabs-nav li.ui-tabs-selected a {
+	color: #000;
+	background: rgba(105,105,105,.9)  url('gradient-menu.png') repeat-x 0 0;
+}
+
+/*
+|---------------------------------------------------------------
+| Buttons - Primary
+|---------------------------------------------------------------
+*/
+button,
+input.button-main,
+input.button-sec,
+button.button-small {
+	color: #111;
+	border: 1px solid #BABABA;
+	background: rgba(186,186,186,.75) url('gradient-menu.png') repeat-x 0 0;
+}
+button.button-sec,
+input.button-sec {
+	color: #555;
+}
+button.button-signin {
+	border-color: #BABABA;
+}
+.signin,
+.signin:hover {
+	background: #000;
+	color: #fff;
+}
+
+/*
+|---------------------------------------------------------------
+| Buttons - Secondary
+|---------------------------------------------------------------
+*/
+button.button-main:hover,
+button.button-signin:hover,
+input.button-main:hover,
+button.button-sec:hover,
+input.button-sec:hover,
+button.button-small:hover {
+	border: 1px solid #696969;
+	background: rgba(105,105,105,.75) url('gradient-menu.png') repeat-x 0 0;
+	color: #eee;
+}
+.signin:hover { border-color: #BABABA; }
+
+
+/*
+|---------------------------------------------------------------
+| Inputs
+|---------------------------------------------------------------
+*/
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+select,
+.signin-panel input[type=text],
+.signin-panel input[type=password] {
+	color: #9a9a9a;
+	border: 1px solid #BABABA;
+	background: #000;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus,
+select:hover,
+select:focus,
+.signin-panel input[type=text]:focus,
+.signin-panel input[type=password]:focus {
+	outline: none;
+	border-color: #696969;
+	-moz-box-shadow: 0 0 10px #696969;
+	-webkit-box-shadow: 0 0 10px #696969;
+	box-shadow: 0 0 10px #696969;
+}

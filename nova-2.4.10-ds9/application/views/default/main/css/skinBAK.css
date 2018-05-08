@@ -4,24 +4,24 @@
 |---------------------------------------------------------------
 */
 body {
-	background-image: url(../../_global/banner.jpg);
-	background-color: #000000;
-	background-position: top left;
-	background-repeat: no-repeat;
-	background-size: 100%;
+	background: #000 url(../../_global/banner.jpg) no-repeat 0 0;
+	color: #ccc;
 	font: 75%/1.5 "lucida grande", verdana, arial, sans-serif;
 	text-align: center;
 	min-width: 960px;
 	max-width: 1280px;
 	padding: 0 40px;
-	margin: 0 auto;
 }
+/*
+|---------------------------------------------------------------
+| WRAPPER
+|---------------------------------------------------------------
+*/
 .wrapper {
 	padding: 0;
 	margin: 0 auto;
 	text-align: left;
 }
-a { text-decoration: none; }
 
 /*
 |---------------------------------------------------------------
@@ -35,10 +35,7 @@ header {
 	background: none;
 }
 header .wrapper {
-	background-image: url(../../_global/logo1.png);
-	background-position: 12px 15px;
-	background-repeat: no-repeat;
-	background-size: 769px;
+	background: none;
 }
 
 /*
@@ -49,17 +46,22 @@ header .wrapper {
 #body {
 	position: relative;
 	margin: 0 0 1em 0;
-	background: rgba(0,0,0,.5);
+	background: none;
+	border: 1px solid #cfb770;
 	-moz-border-radius: 0 0 3px 3px;
 	border-radius: 0 0 3px 3px;
 }
+
 .content {
 	margin-left: 170px;
 	padding: 15px;
 	line-height: 1.4;
+	border-left: 1px solid #cfb770;
+	border-bottom: 1px solid #cfb770;
 	-moz-border-radius: 0 0 3px 0;
 	border-radius: 0 0 3px 0;
 }
+
 
 /*
 |---------------------------------------------------------------
@@ -90,17 +92,33 @@ header .wrapper {
 	display: block;
 	padding: 0 20px 2px 20px;	
 	text-decoration: none;
+	color: #000;
 	font-weight: bold;
 	font-variant: small-caps;
-	border: none;
+	border: 1px solid #b770cf;
+	border-bottom: none;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .35);
 	-moz-border-radius: 3px 3px 0 0;
 	border-radius: 3px 3px 0 0;
+	background: #b770cf url('../images/gradient-menu.png') 
+      repeat-x 0 0;
+	filter: alpha(opacity=75);
+	opacity: .75;
 }
 #menu .nav-main ul li a span {padding: 12px; }
-#menu .nav-main ul li a:hover, a.active {
+#menu .nav-main ul li a:hover {
+	color: #000;
 	text-shadow: 0 0 0 transparent;
+	filter: alpha(opacity=90);
+	opacity: .9;
 }
+#menu .nav-main ul li a.active {
+	color: #000;
+	text-shadow: 0 0 0 transparent;
+	filter: alpha(opacity=90);
+	opacity: .9;
+}
+
 
 /*
 |---------------------------------------------------------------
@@ -139,11 +157,6 @@ header .wrapper {
 }
 .nav-sub img {max-width:160px;}
 
-.nav-sub ul li.menu_category {
-    padding: 0 5px 0 0;
-    font-weight: bold;
-    font-size: 110%;
-}
 /*
 |---------------------------------------------------------------
 | SIGN IN PANEL
@@ -167,7 +180,10 @@ header .wrapper {
 	border-radius: 3px 3px 3px 3px;
 }
 .signin:hover {
+	border-color: #cfb770;
+	color: #fff;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+	background: #000;
 }
 .signin-active, .signin-active:hover {
 }
@@ -182,12 +198,22 @@ header .wrapper {
 	width: 150px;
 	padding: 5px 3px !important;
 	font-size: 1.1em;
+	background: #000 !important;
+	border: 1px solid #cfb770!important;
 	-moz-border-radius: 3px;
 	border-radius: 3px 3px 3px 3px;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	color: #B3B3B3;
 }
 .signin-panel input[type=text]:focus,
 .signin-panel input[type=password]:focus {
 	outline: none;
+	border-color: #b770cf;
+	-moz-box-shadow: 0 0 10px #b770cf;
+	-webkit-box-shadow: 0 0 10px #b770cf;
+	box-shadow: 0 0 10px #b770cf;
 }
 .signin-panel a {
 
@@ -206,10 +232,46 @@ footer {
 	padding: .8em 0;
 	text-align: center;
 	font-size: .9em;
+	color: #fff;
 	-moz-border-radius: 0 0 3px 3px;
 	border-radius: 0 0 3px 3px;
 }
 
+/*
+|---------------------------------------------------------------
+| FONT COLORS
+|---------------------------------------------------------------
+*/
+.page-head 		{ color: #cfb770; }
+.page-subhead	{ color: #cfb770; }
+
+.gray	{ color: #999999; }
+.red	{ color: #cc334c; }
+.orange	{ color: #ccb333; }
+.green	{ color: #33cc66; }
+.blue	{ color: #334ccc; }
+.MD { color: #00cc00; }
+
+/*
+|---------------------------------------------------------------
+| LINKS
+|---------------------------------------------------------------
+*/
+a {
+	text-decoration: none; 
+	color: #cfb770;
+}
+a:hover {
+	color: #b770cf;
+}
+
+a.edit {
+	color: #bbb;
+	border: none;
+}
+a.edit:hover {
+	color: #b770cf;
+}
 
 /*
 |---------------------------------------------------------------
@@ -221,6 +283,9 @@ input[type=password],
 input[type=email],
 textarea,
 select {
+	color: #9a9a9a;
+	border: 1px solid #cfb770;
+	background: #000;
 	font-size: 1.1em;
 	font-family: "lucida grande", verdana, arial, sans-serif;
 	-moz-border-radius: 3px;
@@ -229,6 +294,19 @@ select {
 	-webkit-box-shadow: inset 0 1px 1px #e3e3e3, 0 1px 0 #f6f6f6;
 	box-shadow: inset 0 1px 1px #e3e3e3, 0 1px 0 #f6f6f6;
 }
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus,
+select:hover,
+select:focus {
+	outline: none;
+	border-color: #b770cf;
+	-moz-box-shadow: 0 0 10px #b770cf;
+	-webkit-box-shadow: 0 0 10px #b770cf;
+	box-shadow: 0 0 10px #b770cf;
+}
+
 kbd {
 	font-size: 115%;
 	font-weight: bold;
@@ -265,19 +343,64 @@ input.button-main,
 input.button-sec {
 	font-weight: bold;
 	font-size: 105%;
+	color: #111;
+	border: 1px solid #cfb770;
+	background: #cfb770 url('../images/gradient-menu.png');
 	border-radius: 25px;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
+	filter: alpha(opacity=75);
+	opacity: .75;
 }
+
+button.button-main:hover,
+button.button-signin:hover,
+input.button-main:hover {
+	border: 1px solid #b770cf;
+	background: #b770cf url('../images/gradient-menu.png') 
+      repeat-x 0 0;
+	color: #eee;
+	filter: alpha(opacity=75);
+	opacity: .75;
+}
+
 button.button-sec,
 input.button-sec {
 	border: 1px solid transparent;
+	color: #555;
 	background: transparent;
+	filter: alpha(opacity=75);
+	opacity: .75;
+}
+button.button-sec:hover,
+input.button-sec:hover {
+	color: #eee;
+	border: 1px solid #b770cf;
+	background: #b770cf url('../images/gradient-menu.png') 
+      repeat-x 0 0;
+	filter: alpha(opacity=75);
+	opacity: .75;
+}
+
+button.button-signin {
+	border-color: #cfb770;
 }
 
 button.button-small {
+	border: 1px solid #b770cf;
+	background: #111 url('../images/gradient-menu.png');
+	color: #ddd;
 	font-weight: normal !important;
 	font-size: 90%;
+	filter: alpha(opacity=75);
+	opacity: .75;
+}
+button.button-small:hover {
+	border: 1px solid #b770cf;
+	background: #b770cf url('../images/gradient-menu.png') 
+      repeat-x 0 0;
+	filter: alpha(opacity=75);
+	opacity: .75;
 }
 
 button[disabled],
@@ -285,11 +408,12 @@ button[disabled]:hover,
 input.button-main[disabled],
 input.button-main[disabled]:hover {
 	opacity: .5;
-	filter:alpha(opacity=Õ50Õ);
+	filter:alpha(opacity=50);
 	border: 1px solid #333;
 	background: #ffcc00 url('../images/gradient-menu.png') repeat-x center left;
 	color: #ccc;
 }
+
 
 /*
 |---------------------------------------------------------------
@@ -298,6 +422,7 @@ input.button-main[disabled]:hover {
 */
 #comments p, #news_blocks p, .post_info {
 	background: none;
+	border: 1px solid #cfb770;
 	-moz-border-radius: 3px;
 	border-radius: 3px 3px 3px 3px;
 }
@@ -368,7 +493,7 @@ ul.none, ol.none { list-style: none; }
 |---------------------------------------------------------------
 */
 hr {
-	border: 1px solid #333;
+	border: 1px solid #cfb770;
 	border-width: 1px 0 0;
 }
 

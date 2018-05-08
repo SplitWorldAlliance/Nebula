@@ -50,7 +50,7 @@ $link = array(
 		<?php echo $javascript;?>
 	</head>
 	<body>
-		<h1 id="name"><?php echo $this->options['sim_name'];?></h1>
+		<br><br><br><br><br><br><!---<h1 id="name"><?php echo $this->options['sim_name'];?></h1>--->
 		<section>
 			<div class="wrapper">
 				<div class="content">
