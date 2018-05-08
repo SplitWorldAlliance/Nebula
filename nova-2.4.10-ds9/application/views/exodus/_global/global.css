@@ -1,7 +1,7 @@
 
 
 body {
-	background: #404248 url(banner.jpg) top center;
+	background: #404248 url("fade_to_white.jpg") top center;
         background-size:100% 100%;
         background-attachment: fixed;
 }

@@ -1,0 +1,17 @@
+skin: Exodus
+location: exodus
+credits: The Exodus skin was based on the Titan skin, redesigned by Azmaria and Monoui and rebuilt for the Nebula Simming Management System using a Global Consolidated Setting System. The Titan skin was created by Anodyne Productions. Edits are permissible provided the original credits remain intact.
+version: 3.0
+sections:
+  -
+    type: main
+    preview: preview-main.jpg
+  -
+    type: wiki
+    preview: preview-wiki.jpg
+  -
+    type: login
+    preview: preview-login.jpg
+  -
+    type: admin
+    preview: preview-admin.jpg

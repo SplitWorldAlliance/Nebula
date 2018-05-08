@@ -1,13 +1,16 @@
 /*
 |---------------------------------------------------------------
-| STYLESHEET - LOGIN
+| STYLESHEET - MAIN
 |---------------------------------------------------------------
 |
-| File: titan/login/css/main.css
+| File: titan/main/css/main.css
 | Author: David VanScott [davidv@anodyne-productions.com]
 | Version: 1.0
 */
 
 @import url('structure.css');
 @import url('skin.css');
+@import url('jquery.ui.tabs.css');
+@import url('../../_global/random.php');
+@import url('../../_global/colors.css');
 @import url('../../_global/global.css');
