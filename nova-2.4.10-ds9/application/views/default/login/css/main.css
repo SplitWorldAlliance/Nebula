@@ -10,3 +10,5 @@
 
 @import url('structure.css');
 @import url('skin.css');
+@import url('../../_global/colors.css');
+@import url('../../_global/global.css');
