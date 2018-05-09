@@ -1,6 +1,6 @@
 <?php
 
-define('INSTALL_ROOT', str_replace('\\', '/', realpath(dirname(__FILE__))).'/nova/');
+define('INSTALL_ROOT', str_replace('\\', '/', realpath(dirname(__FILE__))).'/nebula/');
 
 /*
  *---------------------------------------------------------------
@@ -234,7 +234,7 @@ if ( ! ini_get('date.timezone'))
 	}
 	
 	define('APPFOLDER', $application_folder);
-	define('MODFOLDER', 'nova/'.$mods_folder);
+	define('MODFOLDER', 'nebula/'.$mods_folder);
 	
 	if (is_dir($modules_folder))
 	{
