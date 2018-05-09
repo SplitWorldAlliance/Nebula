@@ -28,6 +28,6 @@
 			{/fields}
 		{/sections}
 
-		<p><em>This is an automated email, please don't reply to this message.</em></p>
+		<p><em>This is an automated email, please don't reply to this message. To unsubscribe, please login and visit your settings page.</em></p>
 	</body>
 </html>

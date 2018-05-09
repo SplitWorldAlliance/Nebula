@@ -24,4 +24,4 @@
 {sample_post_label}
 {sample_post}
 
-This is an automated email, please don't reply to this message.
+This is an automated email, please don't reply to this message. To unsubscribe, please login and visit your settings page.
